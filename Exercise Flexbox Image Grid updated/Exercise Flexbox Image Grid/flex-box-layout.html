@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Class Exercise: Flex Box</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     * {
+          box-sizing: border-box;
+     }
+
+    body {
+         margin: 0;
+         font-family: Arial
+    }
+
+    .header {
+         text-align: center
+    }
+
+    .flex_container {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         padding: 0 4px
+    }
+
+    .flex_item {
+         width: 25%;
+         padding: 0 4px
+    }
+
+    .flex_item img {
+         width: 100%;
+    }
+
+@media (max-width: 800px) {
+     .flex_item {
+          width: 50%;
+     }
+}
+
+@media (max-width: 600px) {
+     .flex_item {
+          width: 100%;
+     }
+}
+
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image "Grid"</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="flex_container">
+  <div class="flex_item">
+       <img src="images/image_1.jpg" style="width:100%">
+       <img src="images/image_2.jpg" style="width:100%">
+       <img src="images/image_3.jpg" style="width:100%">
+       <img src="images/image_4.jpg" style="width:100%">
+       <img src="images/image_5.jpg" style="width:100%">
+  </div><!--/flex_item-->
+
+  <div class="flex_item">
+       <img src="images/image_2.jpg" style="width:100%">
+       <img src="images/image_1.jpg" style="width:100%">
+       <img src="images/image_4.jpg" style="width:100%">
+       <img src="images/image_5.jpg" style="width:100%">
+       <img src="images/image_3.jpg" style="width:100%">
+  </div><!--/flex_item-->
+
+   <div class="flex_item">
+        <img src="images/image_1.jpg" style="width:100%">
+       <img src="images/image_4.jpg" style="width:100%">
+       <img src="images/image_3.jpg" style="width:100%">
+       <img src="images/image_2.jpg" style="width:100%">
+       <img src="images/image_5.jpg" style="width:100%">
+  </div><!--/flex_item-->
+
+   <div class="flex_item">
+        <img src="images/image_1.jpg" style="width:100%">
+           <img src="images/image_2.jpg" style="width:100%">
+           <img src="images/image_3.jpg" style="width:100%">
+           <img src="images/image_4.jpg" style="width:100%">
+           <img src="images/image_5.jpg" style="width:100%">
+  </div><!--/flex_item-->
+
+</div><!--/flex_container-->
+
+</body>
+</html>
